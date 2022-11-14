@@ -1,23 +1,31 @@
 #include <stdio.h>
 
-int printSumDigitNumber(int);
+int function(int);
 
 int main()
 {
-    int inputNumber;
+    int inputNumber, max = -2147483647;
     
-    scanf("%d", &inputNumber);
-    
-    if(inputNumber >= 1)
-        printf("%d", printSumDigitNumber(inputNumber)); 
+	do
+	{
+		scanf("%d", &inputNumber);
+		
+		if (function(inputNumber) > max)
+			max = function(inputNumber);
+		
+    } while(inputNumber != 0);
 
+	printf("%d", max);
+	
     return 0;
 }
 
-int printSumDigitNumber(int number)
+int function(int number)
 {   
-    if(number / 10 > 0)
-        return number % 10 + printSumDigitNumber(number / 10);
-    else
-        return number % 10;
+    if (number >= 2)
+		return number * number + 4 * number + 5;
+	else if (number < -2)
+		return 4;
+	else
+		return number * number;
 }
