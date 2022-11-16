@@ -1,4 +1,4 @@
-#include "C:\Users\Alduin\Documents\Projects\Educational\Struct_Union\Struct\Lib\func.h"
+#include "C:\Users\Alduin\Documents\Projects\Educational\Struct_Union\Struct\Inc\main.h"
 
 int main(int argc, char **argv)
 {
