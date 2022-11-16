@@ -1,4 +1,4 @@
-#include "C:\Users\Alduin\Documents\Projects\Educational\Struct_Union\Struct\Inc\main.h"
+#include "..\Inc\main.h"
 
 void AddStudent(struct student* course, int number, char* surname, char* name, int age)
 {
